@@ -1,0 +1,14 @@
+[package]
+name = "calc-in-rust-attempt"
+version = "0.1.0"
+edition = "2021"
+authors = ["teamoor", "teamoor <storagegarbage@yandex.ru>"]
+description = "Attempt to do simple calculator in Rust, while starting with zero knowledge of Rust."
+repository = "https://github.com/DivannKokos/Calc-in-Rust-Attempt"
+license = "GPL-3.0-or-later"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+native-windows-gui = "1.0.12"
+native-windows-derive = "1.0.3"
