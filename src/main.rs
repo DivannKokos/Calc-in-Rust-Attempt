@@ -30,74 +30,75 @@ pub struct BasicApp {
 
     #[nwg_control(text: "", size: (280, 25), position: (10, 10))]
     name_edit: nwg::TextInput,
-
-    #[nwg_control(text: "7", size: (60, 60), position: (10, 160))] // first is horizontal, second is vertical
+    
+    #[nwg_control(text: "стереть", size: (60, 60), position: (70, 40))] // first is horizontal, second is vertical
     #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
-    button2_1_button: nwg::Button,
-
-    #[nwg_control(text: "4", size: (60, 60), position: (10, 220))] // first is horizontal, second is vertical
-    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
-    button3_1_button: nwg::Button,
-
-    #[nwg_control(text: "1", size: (60, 60), position: (10, 280))] // first is horizontal, second is vertical
-    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
-    button4_1_button: nwg::Button,
-
-    #[nwg_control(text: "8", size: (60, 60), position: (70, 160))] // first is horizontal, second is vertical
-    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
-    button2_2_button: nwg::Button,
-
-    #[nwg_control(text: "5", size: (60, 60), position: (70, 220))] // first is horizontal, second is vertical
-    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
-    button3_2_button: nwg::Button,
-
-    #[nwg_control(text: "2", size: (60, 60), position: (70, 280))] // first is horizontal, second is vertical
-    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
-    button4_2_button: nwg::Button,
-
-    #[nwg_control(text: "0", size: (60, 60), position: (70, 340))] // first is horizontal, second is vertical
-    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
-    button5_2_button: nwg::Button,
+    button_clear_current_button: nwg::Button,
 
     #[nwg_control(text: "⌫", size: (60, 60), position: (190, 40))] // first is horizontal, second is vertical
     #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
     button_clear_button: nwg::Button,
 
-    #[nwg_control(text: "стереть", size: (60, 60), position: (70, 40))] // first is horizontal, second is vertical
+    #[nwg_control(text: "/", size: (60, 60), position: (190, 100))] // first is horizontal, second is vertical
     #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
-    button_clear_current_button: nwg::Button,
+    button_4_button: nwg::Button,
+    
+    #[nwg_control(text: "7", size: (60, 60), position: (10, 160))] // first is horizontal, second is vertical
+    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
+    button2_1_button: nwg::Button,
+
+    #[nwg_control(text: "8", size: (60, 60), position: (70, 160))] // first is horizontal, second is vertical
+    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
+    button2_2_button: nwg::Button,
 
     #[nwg_control(text: "9", size: (60, 60), position: (130, 160))] // first is horizontal, second is vertical
     #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
     button2_3_button: nwg::Button,
 
-    #[nwg_control(text: "6", size: (60, 60), position: (130, 220))] // first is horizontal, second is vertical
-    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
-    button3_3_button: nwg::Button,
-
-    #[nwg_control(text: "3", size: (60, 60), position: (130, 280))] // first is horizontal, second is vertical
-    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
-    button4_3_button: nwg::Button,
-
-    // #[nwg_control(text: "button5_5", size: (60, 60), position: (130, 280))] // first is horizontal, second is vertical
-    // #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
-    // button5_3_button: nwg::Button,
-
-    #[nwg_control(text: "/", size: (60, 60), position: (190, 100))] // first is horizontal, second is vertical
-    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
-    button_4_button: nwg::Button,
-
     #[nwg_control(text: "*", size: (60, 60), position: (190, 160))] // first is horizontal, second is vertical
     #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
     button2_4_button: nwg::Button,
+    
+    #[nwg_control(text: "4", size: (60, 60), position: (10, 220))] // first is horizontal, second is vertical
+    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
+    button3_1_button: nwg::Button,
+
+    #[nwg_control(text: "5", size: (60, 60), position: (70, 220))] // first is horizontal, second is vertical
+    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
+    button3_2_button: nwg::Button,
+
+    #[nwg_control(text: "6", size: (60, 60), position: (130, 220))] // first is horizontal, second is vertical
+    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
+    button3_3_button: nwg::Button,
 
     #[nwg_control(text: "-", size: (60, 60), position: (190, 220))] // first is horizontal, second is vertical
     #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
     button3_4_button: nwg::Button,
 
+    #[nwg_control(text: "1", size: (60, 60), position: (10, 280))] // first is horizontal, second is vertical
+    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
+    button4_1_button: nwg::Button,
+
+    #[nwg_control(text: "2", size: (60, 60), position: (70, 280))] // first is horizontal, second is vertical
+    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
+    button4_2_button: nwg::Button,
+
+    #[nwg_control(text: "3", size: (60, 60), position: (130, 280))] // first is horizontal, second is vertical
+    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
+    button4_3_button: nwg::Button,
+    
     #[nwg_control(text: "+", size: (60, 60), position: (190, 280))] // first is horizontal, second is vertical
     #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
     button4_4_button: nwg::Button,
+
+    #[nwg_control(text: "0", size: (60, 60), position: (70, 340))] // first is horizontal, second is vertical
+    #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
+    button5_2_button: nwg::Button,
+
+    // #[nwg_control(text: "button5_5", size: (60, 60), position: (130, 280))] // first is horizontal, second is vertical
+    // #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
+    // button5_3_button: nwg::Button,
+
 
     #[nwg_control(text: "=", size: (60, 60), position: (190, 340))] // first is horizontal, second is vertical
     #[nwg_events( OnButtonClick: [BasicApp::say_hello] )]
