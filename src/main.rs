@@ -19,13 +19,5 @@
 use std::io;
 
 fn main() {
-    println!("Type first number.");
 
-    let mut first_number;
-
-    io::stdin()
-        .read_line(&mut first_number)
-        .expect("Failed to read line");
-
-    println!("You guessed: {first_number}");
 }
